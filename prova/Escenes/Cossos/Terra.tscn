@@ -3,18 +3,19 @@
 [sub_resource type="PhysicsMaterial" id=1]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 169.375, 31 )
+extents = Vector2( 69.375, 31 )
 
 [node name="Terra" type="StaticBody2D"]
 physics_material_override = SubResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_top = -12.0
-margin_right = 341.0
-margin_bottom = 50.0
+margin_left = -1.0
+margin_top = -10.0
+margin_right = 142.0
+margin_bottom = 52.0
 color = Color( 0.705882, 0.266667, 0.266667, 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 170.625, 19 )
+position = Vector2( 70.625, 19 )
 shape = SubResource( 2 )

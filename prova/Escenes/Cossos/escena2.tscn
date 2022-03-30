@@ -2,6 +2,7 @@
 
 [ext_resource path="res://Escenes/Cossos/PesosnatgeCos.tscn" type="PackedScene" id=1]
 
-[node name="Node2D" type="Node2D"]
+[node name="ScenaAnimada2" type="Node2D"]
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( -22, 65 )

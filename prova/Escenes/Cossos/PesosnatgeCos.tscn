@@ -7,19 +7,19 @@
 [ext_resource path="res://Imatges/Green/alienGreen_walk2.png" type="Texture" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 31.0
-height = 0.0
+radius = 19.0
+height = 4.0
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
-"name": "Quiet",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "Camina",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Quiet",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ) ],
@@ -28,16 +28,16 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="AlieenPerso" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 164, 117 )
+position = Vector2( 147, 136 )
 shape = SubResource( 1 )
 
 [node name="Alieen" type="AnimatedSprite" parent="."]
-position = Vector2( 166, 96 )
-scale = Vector2( 0.546875, 0.414063 )
+position = Vector2( 148, 120 )
+scale = Vector2( 0.351562, 0.292969 )
 frames = SubResource( 2 )
 animation = "Quiet"
