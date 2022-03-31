@@ -40,4 +40,4 @@ func animation(velocitat):
 
 
 func _on_Area2D_body_entered(body):
-	get_tree().change_scene("res://Escenes/Cossos/escena2.tscn")
+	get_tree().change_scene("res://Escenes/ESCENA2.tscn")
